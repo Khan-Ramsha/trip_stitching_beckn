@@ -1,9 +1,10 @@
 from beckn_search import BecknSearch
 from trip_stitcher import TripStitcher
-
+from helper import Helper
 class MobilityService:
     def __init__(self):
-        self.beckn_search = BecknSearch()
+        helper=Helper()
+        self.beckn_search = BecknSearch(helper)
         self.trip_stitcher = TripStitcher()
 
     def process_search(self, pickup, drop, catalogs, optimization_parameter):
