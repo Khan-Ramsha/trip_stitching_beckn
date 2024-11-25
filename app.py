@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify
 from mobility_service import MobilityService
 
 app = Flask(__name__)
+# referring official documentation of beckn.
+# https://developers.becknprotocol.io/docs/developer-documentation/transaction-layer/getting-a-list-of-mobility-service-providers-that-can-transport-a-traveller-from-a-pickup-location-to-a-drop-location-node-js/
 
 # Create instance of the MobilityService
 mobility_service = MobilityService()
